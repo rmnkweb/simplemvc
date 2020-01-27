@@ -1,0 +1,412 @@
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+input,
+select,
+textarea,
+button {
+    outline: none;
+}
+
+.wrapper {
+    width: 1100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.loginForm,
+.passForm {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+
+    &Errors {
+        width: 100%;
+        font-size: 0.7rem;
+        color: #92250e;
+    }
+    &Row {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+
+        & a {
+            margin: 0.4rem 0;
+            color: inherit;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        & input[type=text],
+        & input[type=password] {
+            width: 100%;
+            box-sizing: border-box;
+            border: 1px solid #cecece;
+            font-size: 1.2rem;
+            font-family: inherit;
+            padding: 0.3rem;
+
+            &:focus {
+                border-color: #face7b;
+            }
+        }
+        & select {
+            width: 100%;
+            box-sizing: border-box;
+            font-size: 1.2rem;
+            padding: 0.3rem;
+        }
+        & textarea {
+            width: 100%;
+            height: 6.5rem;
+            padding: 0.3rem;
+            box-sizing: border-box;
+            border: 1px solid #cecece;
+            font-size: 1.2rem;
+            font-family: inherit;
+            resize: none;
+
+            &:focus {
+                border-color: #face7b;
+            }
+        }
+        & input[type=file] {
+            padding: 0.3rem 0;
+        }
+        & button {
+            width: 100%;
+            padding: 0.4rem;
+            border: none;
+            font-size: 1rem;
+            font-family: inherit;
+            color: #dcdcdc;
+            background: #003060;
+            cursor: pointer;
+            transition: background-color 0.4s;
+
+            &:hover {
+                background: #00152b;
+            }
+            &:active {
+                background: #0079f1;
+            }
+        }
+        &Required {
+            color: #b50002;
+        }
+    }
+}
+
+.topMenu {
+    width: 100%;
+
+    & ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 1rem 0;
+
+        & li {
+            display: inline-block;
+            margin: 0 0.4rem 0 0;
+            padding: 0;
+
+            & a {
+                display: block;
+                padding: 0.5rem 0.8rem;
+                background: #eeeeee;
+                font-size: 0.8rem;
+                color: inherit;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+.pass {
+    width: 100%;
+
+    &Filter {
+        width: 100%;
+        margin-bottom: 2rem;
+
+        &Item {
+            width: 40%;
+            margin-bottom: 0.8rem;
+            display: block;
+
+            & input {
+                width: 100%;
+                box-sizing: border-box;
+                border: 1px solid #cecece;
+                font-size: 1.2rem;
+                font-family: inherit;
+                padding: 0.3rem;
+
+                &:focus {
+                    border-color: #face7b;
+                }
+            }
+            & select  {
+                width: 100%;
+                box-sizing: border-box;
+                border: 1px solid #cecece;
+                border-radius: 0;
+                font-size: 1.2rem;
+                font-family: inherit;
+                padding: 0.3rem;
+                appearance: none;
+                -webkit-appearance: none;
+                -webkit-border-radius: 0px;
+
+                &:focus {
+                    border-color: #face7b;
+                }
+            }
+            & button {
+                width: 100%;
+                padding: 0.4rem;
+                border: none;
+                font-size: 1rem;
+                font-family: inherit;
+                cursor: pointer;
+            }
+            &Submit {
+                color: #dcdcdc;
+                background: #003060;
+
+                &:active {
+                    background: #0079f1;
+                }
+            }
+            &Cancel {
+                width: 100%;
+                display: inline-block;
+                text-align: center;
+                margin-top: 10px;
+                color: #601c00;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+                &:active {
+                    color: #a22e00;
+                }
+            }
+        }
+    }
+    &Table {
+        width: 100%;
+
+
+        &State {
+            width: 8%;
+        }
+        &Priority {
+            width: 8%;
+        }
+        &Title {
+            width: 8%;
+        }
+        &Service {
+            width: 8%;
+        }
+        &Creator {
+            width: 8%;
+        }
+        &Executors {
+            width: 8%;
+        }
+        &Changed {
+            width: 8%;
+        }
+        &Created {
+            width: 8%;
+        }
+        &Arrive {
+            width: 6%;
+        }
+        &Depart {
+            width: 6%;
+        }
+        &Objects {
+            width: 8%;
+        }
+        &Cars {
+            width: 8%;
+        }
+        &Edit {
+            width: 4%;
+            text-align: center;
+
+            a {
+                width: 1.4rem;
+                height: 1.4rem;
+                margin-right: 0.3rem;
+                display: inline-block;
+                opacity: 0.6;
+                cursor: pointer;
+
+                &.edit {
+                    background: url("../img/edit.svg") no-repeat;
+                    background-size: 100%;
+                }
+                &.delete {
+                    background: url("../img/delete.svg") no-repeat;
+                    background-size: 100%;
+                }
+                &.clear {
+                    background: url("../img/eraser.svg") no-repeat;
+                    background-size: 100%;
+                }
+                &.list {
+                    background: url("../img/file.svg") no-repeat;
+                    background-size: 100%;
+                }
+                &.excel {
+                    background: url("../img/xlsx.svg") no-repeat;
+                    background-size: 100%;
+                }
+
+                &:hover {
+                    opacity: 1;
+                }
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+        & th {
+            box-sizing: border-box;
+            padding: 0.2rem 0.2rem;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-align: left;
+            background: #eeeeee;
+
+            & a {
+                display: block;
+                color: inherit;
+                text-decoration: underline;
+            }
+
+            &.sortable {
+                cursor: pointer;
+
+                &.active {
+                    background: #e0e0e0;
+                }
+            }
+        }
+        & tr {
+            position: relative;
+
+            & td {
+                padding: 0.3rem 0.2rem;
+                font-size: 1rem;
+                //border: 1px solid #3c3c3c;
+
+                & a {
+                    color: inherit;
+                    text-decoration: underline;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+
+                & .editButton {
+                    width: 100%;
+                    padding: 0.2rem 0.4rem;
+                    font-size: 0.8rem;
+                    background: #fafafa;
+                    border: 1px solid #dfdfdf;
+                    text-decoration: none;
+                    color: inherit;
+
+                    &:hover {
+                        background: #dfdfdf;
+                        transition: background-color 0.3s;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            &:nth-of-type(2n) {
+                background: #eeeeee;
+            }
+        }
+
+        &.admin {
+
+            .taskTable {
+
+                &Checkbox {
+                    width: 5%;
+                }
+                &Username {
+                    width: 20%;
+                }
+                &Email {
+                    width: 23%;
+                }
+                &Text {
+                    width: 45%;
+                }
+                &Edit {
+                    width: 7%;
+                }
+            }
+        }
+    }
+    &Pagination {
+        width: 100%;
+        margin-top: 3rem;
+        text-align: center;
+
+        & a {
+            font-size: 0.9rem;
+            color: #000000;
+            text-decoration: underline;
+
+            &.current {
+                font-weight: 600;
+                text-decoration: none;
+            }
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &Links {
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        & a {
+            color: #1d1d1d;
+            text-decoration: underline;
+            transition: color 0.5s;
+
+            &:hover {
+                color: #17177e;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,381 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+input,
+select,
+textarea,
+button {
+  outline: none;
+}
+.wrapper {
+  width: 1100px;
+  display: block;
+  margin: 0 auto;
+}
+.loginForm,
+.passForm {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+}
+.loginFormErrors,
+.passFormErrors {
+  width: 100%;
+  font-size: 0.7rem;
+  color: #92250e;
+}
+.loginFormRow,
+.passFormRow {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+.loginFormRow a,
+.passFormRow a {
+  margin: 0.4rem 0;
+  color: inherit;
+  text-decoration: underline;
+}
+.loginFormRow a:hover,
+.passFormRow a:hover {
+  text-decoration: none;
+}
+.loginFormRow input[type=text],
+.passFormRow input[type=text],
+.loginFormRow input[type=password],
+.passFormRow input[type=password] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cecece;
+  font-size: 1.2rem;
+  font-family: inherit;
+  padding: 0.3rem;
+}
+.loginFormRow input[type=text]:focus,
+.passFormRow input[type=text]:focus,
+.loginFormRow input[type=password]:focus,
+.passFormRow input[type=password]:focus {
+  border-color: #face7b;
+}
+.loginFormRow select,
+.passFormRow select {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+}
+.loginFormRow textarea,
+.passFormRow textarea {
+  width: 100%;
+  height: 6.5rem;
+  padding: 0.3rem;
+  box-sizing: border-box;
+  border: 1px solid #cecece;
+  font-size: 1.2rem;
+  font-family: inherit;
+  resize: none;
+}
+.loginFormRow textarea:focus,
+.passFormRow textarea:focus {
+  border-color: #face7b;
+}
+.loginFormRow input[type=file],
+.passFormRow input[type=file] {
+  padding: 0.3rem 0;
+}
+.loginFormRow button,
+.passFormRow button {
+  width: 100%;
+  padding: 0.4rem;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #dcdcdc;
+  background: #003060;
+  cursor: pointer;
+  transition: background-color 0.4s;
+}
+.loginFormRow button:hover,
+.passFormRow button:hover {
+  background: #00152b;
+}
+.loginFormRow button:active,
+.passFormRow button:active {
+  background: #0079f1;
+}
+.loginFormRowRequired,
+.passFormRowRequired {
+  color: #b50002;
+}
+.topMenu {
+  width: 100%;
+}
+.topMenu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 1rem 0;
+}
+.topMenu ul li {
+  display: inline-block;
+  margin: 0 0.4rem 0 0;
+  padding: 0;
+}
+.topMenu ul li a {
+  display: block;
+  padding: 0.5rem 0.8rem;
+  background: #eeeeee;
+  font-size: 0.8rem;
+  color: inherit;
+  text-decoration: none;
+}
+.topMenu ul li a:hover {
+  text-decoration: underline;
+}
+.topMenu ul li:last-of-type {
+  margin-right: 0;
+}
+.pass {
+  width: 100%;
+}
+.passFilter {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.passFilterItem {
+  width: 40%;
+  margin-bottom: 0.8rem;
+  display: block;
+}
+.passFilterItem input {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cecece;
+  font-size: 1.2rem;
+  font-family: inherit;
+  padding: 0.3rem;
+}
+.passFilterItem input:focus {
+  border-color: #face7b;
+}
+.passFilterItem select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cecece;
+  border-radius: 0;
+  font-size: 1.2rem;
+  font-family: inherit;
+  padding: 0.3rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+.passFilterItem select:focus {
+  border-color: #face7b;
+}
+.passFilterItem button {
+  width: 100%;
+  padding: 0.4rem;
+  border: none;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+.passFilterItemSubmit {
+  color: #dcdcdc;
+  background: #003060;
+}
+.passFilterItemSubmit:active {
+  background: #0079f1;
+}
+.passFilterItemCancel {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+  color: #601c00;
+  text-decoration: none;
+}
+.passFilterItemCancel:hover {
+  text-decoration: underline;
+}
+.passFilterItemCancel:active {
+  color: #a22e00;
+}
+.passTable {
+  width: 100%;
+}
+.passTableState {
+  width: 8%;
+}
+.passTablePriority {
+  width: 8%;
+}
+.passTableTitle {
+  width: 8%;
+}
+.passTableService {
+  width: 8%;
+}
+.passTableCreator {
+  width: 8%;
+}
+.passTableExecutors {
+  width: 8%;
+}
+.passTableChanged {
+  width: 8%;
+}
+.passTableCreated {
+  width: 8%;
+}
+.passTableArrive {
+  width: 6%;
+}
+.passTableDepart {
+  width: 6%;
+}
+.passTableObjects {
+  width: 8%;
+}
+.passTableCars {
+  width: 8%;
+}
+.passTableEdit {
+  width: 4%;
+  text-align: center;
+}
+.passTableEdit a {
+  width: 1.4rem;
+  height: 1.4rem;
+  margin-right: 0.3rem;
+  display: inline-block;
+  opacity: 0.6;
+  cursor: pointer;
+}
+.passTableEdit a.edit {
+  background: url("../img/edit.svg") no-repeat;
+  background-size: 100%;
+}
+.passTableEdit a.delete {
+  background: url("../img/delete.svg") no-repeat;
+  background-size: 100%;
+}
+.passTableEdit a.clear {
+  background: url("../img/eraser.svg") no-repeat;
+  background-size: 100%;
+}
+.passTableEdit a.list {
+  background: url("../img/file.svg") no-repeat;
+  background-size: 100%;
+}
+.passTableEdit a.excel {
+  background: url("../img/xlsx.svg") no-repeat;
+  background-size: 100%;
+}
+.passTableEdit a:hover {
+  opacity: 1;
+}
+.passTableEdit a:last-of-type {
+  margin-right: 0;
+}
+.passTable th {
+  box-sizing: border-box;
+  padding: 0.2rem 0.2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-align: left;
+  background: #eeeeee;
+}
+.passTable th a {
+  display: block;
+  color: inherit;
+  text-decoration: underline;
+}
+.passTable th.sortable {
+  cursor: pointer;
+}
+.passTable th.sortable.active {
+  background: #e0e0e0;
+}
+.passTable tr {
+  position: relative;
+}
+.passTable tr td {
+  padding: 0.3rem 0.2rem;
+  font-size: 1rem;
+}
+.passTable tr td a {
+  color: inherit;
+  text-decoration: underline;
+}
+.passTable tr td a:hover {
+  text-decoration: none;
+}
+.passTable tr td .editButton {
+  width: 100%;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+  background: #fafafa;
+  border: 1px solid #dfdfdf;
+  text-decoration: none;
+  color: inherit;
+}
+.passTable tr td .editButton:hover {
+  background: #dfdfdf;
+  transition: background-color 0.3s;
+  cursor: pointer;
+}
+.passTable tr:nth-of-type(2n) {
+  background: #eeeeee;
+}
+.passTable.admin .taskTableCheckbox {
+  width: 5%;
+}
+.passTable.admin .taskTableUsername {
+  width: 20%;
+}
+.passTable.admin .taskTableEmail {
+  width: 23%;
+}
+.passTable.admin .taskTableText {
+  width: 45%;
+}
+.passTable.admin .taskTableEdit {
+  width: 7%;
+}
+.passPagination {
+  width: 100%;
+  margin-top: 3rem;
+  text-align: center;
+}
+.passPagination a {
+  font-size: 0.9rem;
+  color: #000000;
+  text-decoration: underline;
+}
+.passPagination a.current {
+  font-weight: 600;
+  text-decoration: none;
+}
+.passPagination a:hover {
+  text-decoration: none;
+}
+.passLinks {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.passLinks a {
+  color: #1d1d1d;
+  text-decoration: underline;
+  transition: color 0.5s;
+}
+.passLinks a:hover {
+  color: #17177e;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
